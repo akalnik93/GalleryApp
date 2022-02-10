@@ -1,15 +1,8 @@
 import UIKit
 
-class CustomTableViewCell: UITableViewCell {
+class FavoriteCell: UITableViewCell {
     
-    var cellTitle: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "Helvetica", size: 20)
-        label.textColor = .black
-        label.textAlignment = .right
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    var cellTitle = LabelFactory.standartRight
     
     var cellPicture: UIImageView = {
         let imageView = UIImageView()

@@ -1,11 +1,18 @@
 import Foundation
 import UIKit
 
-class NetworkService {
+protocol NetworkServiceProcotol {
+    var delegate: RouterProtocol? { get set }
+    func getPictureModels() -> [PictureModel]
+    func cleanPictureModels()
+    func fetchPhotosByRequest(text: String?)
+}
+
+class NetworkService: NetworkServiceProcotol {
     static let shared = NetworkService()
     
     init() {
-        self.urlStringWithText(text: nil)
+        self.fetchPhotosByRequest(text: nil)
     }
     
     var delegate: RouterProtocol?
@@ -22,14 +29,8 @@ class NetworkService {
         self.pictureModels = []
     }
     
-    func urlStringWithText(text: String?) {
-        var result = "random"
-        if text != nil {
-            guard let text = text else { return }
-            result = text
-        }
-        let urlString = "https://api.unsplash.com/search/photos?page=1&per_page=30&query=\(result)&orientation=squarish&client_id=LtsTe5mVTRCBj9M0LL1P3sE2j7F9AGaLbkUF8CvCoHI"
-        guard let url = URL(string: urlString) else { return }
+    func fetchPhotosByRequest(text: String?) {
+        guard let url = urlStringWithText(text: text) else { return }
         self.fetchPhotos(url: url) { results in
         for result in results {
             let pictureModel = PictureModel(result: result)
@@ -37,7 +38,18 @@ class NetworkService {
             }
         }
     }
-
+    
+    private func urlStringWithText(text: String?) -> URL? {
+        var result = "random"
+        if text != nil {
+            guard let text = text else { return nil }
+            result = text
+        }
+        let urlString = "https://api.unsplash.com/search/photos?page=1&per_page=30&query=\(result)&orientation=squarish&client_id=LtsTe5mVTRCBj9M0LL1P3sE2j7F9AGaLbkUF8CvCoHI"
+        guard let url = URL(string: urlString) else { return nil }
+        return url
+    }
+    
     private func fetchPhotos(url: URL?, completion: @escaping([Result]) -> Void) {
         self.cleanPictureModels()
         guard let url = url else { return }

@@ -15,15 +15,16 @@
 		FE00F9B627B117D300FF63B4 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00F9B527B117D300FF63B4 /* FavoritesViewController.swift */; };
 		FE00F9B827B117F900FF63B4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00F9B727B117F900FF63B4 /* DetailViewController.swift */; };
 		FE00F9BA27B11D6E00FF63B4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE00F9B927B11D6E00FF63B4 /* Launch Screen.storyboard */; };
-		FE00F9BF27B1689C00FF63B4 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00F9BE27B1689C00FF63B4 /* ImageCell.swift */; };
+		FE00F9BF27B1689C00FF63B4 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE00F9BE27B1689C00FF63B4 /* GalleryCell.swift */; };
+		FE2C567D27B5A6D200073274 /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2C567C27B5A6D200073274 /* LabelFactory.swift */; };
 		FE4A599127B1B8080043DAD4 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A599027B1B8080043DAD4 /* CustomTabBar.swift */; };
 		FE4A599327B1CB7C0043DAD4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A599227B1CB7C0043DAD4 /* NetworkService.swift */; };
 		FE4A599927B27BB30043DAD4 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A599827B27BB30043DAD4 /* PictureModel.swift */; };
 		FE4A599B27B293810043DAD4 /* DateFormatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A599A27B293810043DAD4 /* DateFormatorService.swift */; };
-		FE4A599D27B29E810043DAD4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A599C27B29E810043DAD4 /* CustomTableViewCell.swift */; };
+		FE4A599D27B29E810043DAD4 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A599C27B29E810043DAD4 /* FavoriteCell.swift */; };
 		FE4A59A327B3F30B0043DAD4 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A59A227B3F30B0043DAD4 /* RouterProtocol.swift */; };
 		FE4A59A527B3F79C0043DAD4 /* FavoritePicturesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A59A427B3F79C0043DAD4 /* FavoritePicturesService.swift */; };
-		FE4A59A827B448860043DAD4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A59A727B448860043DAD4 /* Response.swift */; };
+		FE4A59A827B448860043DAD4 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4A59A727B448860043DAD4 /* APIResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,15 +40,16 @@
 		FE00F9B527B117D300FF63B4 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		FE00F9B727B117F900FF63B4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FE00F9B927B11D6E00FF63B4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		FE00F9BE27B1689C00FF63B4 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		FE00F9BE27B1689C00FF63B4 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		FE2C567C27B5A6D200073274 /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 		FE4A599027B1B8080043DAD4 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		FE4A599227B1CB7C0043DAD4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FE4A599827B27BB30043DAD4 /* PictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
 		FE4A599A27B293810043DAD4 /* DateFormatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatorService.swift; sourceTree = "<group>"; };
-		FE4A599C27B29E810043DAD4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FE4A599C27B29E810043DAD4 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		FE4A59A227B3F30B0043DAD4 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		FE4A59A427B3F79C0043DAD4 /* FavoritePicturesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePicturesService.swift; sourceTree = "<group>"; };
-		FE4A59A727B448860043DAD4 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		FE4A59A727B448860043DAD4 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,39 +102,88 @@
 		FE00F99C27B1165200FF63B4 /* GalleryApp */ = {
 			isa = PBXGroup;
 			children = (
+				FE00F9AB27B1165A00FF63B4 /* Info.plist */,
+				FE2C567A27B5A60100073274 /* Application */,
+				FE2C567B27B5A6BC00073274 /* Factories */,
+				FE2C567927B5A53800073274 /* Views */,
 				FE4A59A927B448C10043DAD4 /* Protocols */,
 				FE4A59A627B3F7AE0043DAD4 /* Services */,
-				FE00F9B227B1171300FF63B4 /* Model */,
-				FE00F9B127B1170500FF63B4 /* ViewControllers */,
-				FE00F99D27B1165200FF63B4 /* AppDelegate.swift */,
-				FE00F99F27B1165200FF63B4 /* SceneDelegate.swift */,
-				FE00F9B927B11D6E00FF63B4 /* Launch Screen.storyboard */,
-				FE00F9A627B1165900FF63B4 /* Assets.xcassets */,
-				FE00F9AB27B1165A00FF63B4 /* Info.plist */,
+				FE00F9B227B1171300FF63B4 /* Models */,
+				FE00F9B127B1170500FF63B4 /* Modules */,
 			);
 			path = GalleryApp;
 			sourceTree = "<group>";
 		};
-		FE00F9B127B1170500FF63B4 /* ViewControllers */ = {
+		FE00F9B127B1170500FF63B4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FE2C567627B5A47900073274 /* Gallery */,
+				FE2C567727B5A48200073274 /* Favorites */,
+				FE2C567827B5A48E00073274 /* Detail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FE00F9B227B1171300FF63B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE4A599827B27BB30043DAD4 /* PictureModel.swift */,
+				FE4A59A727B448860043DAD4 /* APIResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE2C567627B5A47900073274 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
 				FE00F9B327B1173F00FF63B4 /* GalleryViewController.swift */,
-				FE00F9B527B117D300FF63B4 /* FavoritesViewController.swift */,
-				FE00F9B727B117F900FF63B4 /* DetailViewController.swift */,
+				FE00F9BE27B1689C00FF63B4 /* GalleryCell.swift */,
 			);
-			path = ViewControllers;
+			path = Gallery;
 			sourceTree = "<group>";
 		};
-		FE00F9B227B1171300FF63B4 /* Model */ = {
+		FE2C567727B5A48200073274 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
-				FE00F9BE27B1689C00FF63B4 /* ImageCell.swift */,
-				FE4A599027B1B8080043DAD4 /* CustomTabBar.swift */,
-				FE4A599827B27BB30043DAD4 /* PictureModel.swift */,
-				FE4A599C27B29E810043DAD4 /* CustomTableViewCell.swift */,
-				FE4A59A727B448860043DAD4 /* Response.swift */,
+				FE00F9B527B117D300FF63B4 /* FavoritesViewController.swift */,
+				FE4A599C27B29E810043DAD4 /* FavoriteCell.swift */,
 			);
-			path = Model;
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		FE2C567827B5A48E00073274 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FE00F9B727B117F900FF63B4 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		FE2C567927B5A53800073274 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE4A599027B1B8080043DAD4 /* CustomTabBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FE2C567A27B5A60100073274 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FE00F99D27B1165200FF63B4 /* AppDelegate.swift */,
+				FE00F99F27B1165200FF63B4 /* SceneDelegate.swift */,
+				FE00F9B927B11D6E00FF63B4 /* Launch Screen.storyboard */,
+				FE00F9A627B1165900FF63B4 /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FE2C567B27B5A6BC00073274 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				FE2C567C27B5A6D200073274 /* LabelFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		FE4A59A627B3F7AE0043DAD4 /* Services */ = {
@@ -272,14 +323,15 @@
 				FE00F9B627B117D300FF63B4 /* FavoritesViewController.swift in Sources */,
 				FE4A599327B1CB7C0043DAD4 /* NetworkService.swift in Sources */,
 				FE4A599127B1B8080043DAD4 /* CustomTabBar.swift in Sources */,
-				FE4A599D27B29E810043DAD4 /* CustomTableViewCell.swift in Sources */,
-				FE4A59A827B448860043DAD4 /* Response.swift in Sources */,
+				FE4A599D27B29E810043DAD4 /* FavoriteCell.swift in Sources */,
+				FE4A59A827B448860043DAD4 /* APIResponse.swift in Sources */,
 				FE4A599927B27BB30043DAD4 /* PictureModel.swift in Sources */,
 				FE4A59A327B3F30B0043DAD4 /* RouterProtocol.swift in Sources */,
 				FE4A599B27B293810043DAD4 /* DateFormatorService.swift in Sources */,
+				FE2C567D27B5A6D200073274 /* LabelFactory.swift in Sources */,
 				FE00F9B827B117F900FF63B4 /* DetailViewController.swift in Sources */,
 				FE4A59A527B3F79C0043DAD4 /* FavoritePicturesService.swift in Sources */,
-				FE00F9BF27B1689C00FF63B4 /* ImageCell.swift in Sources */,
+				FE00F9BF27B1689C00FF63B4 /* GalleryCell.swift in Sources */,
 				FE00F9A027B1165200FF63B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class ImageCell: UICollectionViewCell {
+class GalleryCell: UICollectionViewCell {
     static let identifier = "collectionCell"
     
     private var imageView: UIImageView = {

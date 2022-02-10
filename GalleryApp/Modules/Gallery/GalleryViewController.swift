@@ -10,7 +10,7 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource, UICol
     
     private var collectionView : UICollectionView?
     
-    var networkService: NetworkService?
+    var networkService: NetworkServiceProcotol?
     
     let searchBar = UISearchBar()
     
@@ -48,7 +48,7 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource, UICol
     private func createCollectionView(collectionViewFlowLayout: UICollectionViewFlowLayout) {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewFlowLayout)
         collectionView.showsVerticalScrollIndicator = false
-        collectionView.register(ImageCell.self, forCellWithReuseIdentifier: ImageCell.identifier)
+        collectionView.register(GalleryCell.self, forCellWithReuseIdentifier: GalleryCell.identifier)
         collectionView.dataSource = self
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(collectionView)
@@ -60,7 +60,7 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImageCell.identifier, for: indexPath) as? ImageCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GalleryCell.identifier, for: indexPath) as? GalleryCell else {
             return UICollectionViewCell()
         }
         let model = self.pictureModels[indexPath.row]
@@ -72,7 +72,7 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailViewController = DetailViewController()
         let pictureModel = self.pictureModels[indexPath.row]
-        detailViewController.configure(pictureModel: pictureModel, delegate: self)
+        detailViewController.configure(pictureModel: pictureModel, delegate: nil)
         self.present(detailViewController, animated: true)
     }
     
@@ -86,7 +86,7 @@ class GalleryViewController: UIViewController, UICollectionViewDataSource, UICol
         self.searchBar.resignFirstResponder()
         if let text = searchBar.text {
             self.collectionView?.reloadData()
-            self.networkService?.urlStringWithText(text: text)
+            self.networkService?.fetchPhotosByRequest(text: text)
         }
     }
     

@@ -11,34 +11,13 @@ class DetailViewController: UIViewController {
         return view
     }()
     
-    var authorName: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "Helvetica", size: 17)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    var authorName = LabelFactory.standart
     
-    var location: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "Helvetica", size: 17)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    var location = LabelFactory.standart
     
-    var likes: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "Helvetica", size: 17)
-        label.textAlignment = .right
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    var likes = LabelFactory.standartRight
     
-    var createDate: UILabel = {
-        let label = UILabel()
-        label.font = UIFont(name: "Helvetica", size: 17)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+    var createDate = LabelFactory.standart
     
     var favoriteButton: UIButton = {
         let button = UIButton()
@@ -93,7 +72,7 @@ class DetailViewController: UIViewController {
         }
     }
     
-    func configure(pictureModel: PictureModel, delegate: RouterProtocol) {
+    func configure(pictureModel: PictureModel, delegate: RouterProtocol?) {
         self.delegate = delegate
         let isFavorite = favoritePicturesService.ifIsFavorite(pictureModel: pictureModel)
         self.checkIsFavorite(favorite: isFavorite)
