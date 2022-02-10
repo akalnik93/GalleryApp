@@ -4,11 +4,11 @@
 
 Первый (галлерея) - строка поиска и коллекция фотографий.
 
-<img src="ScreenShots/Gallery.jpg" width="200">
+<img src="ScreenShots/Gallery.png" width="120">
 
 Второй (избранное) - таблица со списком избранных фотографий.
 
-<img src="ScreenShots/Favorites.jpg" width="200">
+<img src="ScreenShots/Favorites.png" width="120">
 
 При нажатии на ячейку открывается экран дополнительной информации, содержащий:
 - фотографию с кнопкой добавления в избранное
@@ -17,4 +17,8 @@
 - местоположение
 - количество лайков
 
-<img src="ScreenShots/Detail.jpg" width="200">
+<img src="ScreenShots/Detail.png" width="120">
+
+При неправильном запросе в строке поиска появляется сообщение
+
+<img src="ScreenShots/Alert.png" width="120">
