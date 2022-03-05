@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 class FavoritesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, RouterProtocol {

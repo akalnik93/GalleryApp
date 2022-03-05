@@ -1,8 +1,9 @@
-import Foundation
 import UIKit
 
 class CustomTabBar: UITabBarController {
+    
     private func setupTabBar() {
+        
         self.tabBar.backgroundColor = .systemGray6
         self.tabBar.backgroundImage = UIImage()
         
@@ -12,16 +13,12 @@ class CustomTabBar: UITabBarController {
         guard let galleryImage = UIImage(named: "Gallery") else { return }
         guard let favoritesImage = UIImage(named: "Favorites") else { return }
         
-        galleryImage.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
-        tabBarItemGallery.selectedImage = galleryImage
         tabBarItemGallery.image = galleryImage
-        tabBarItemGallery.imageInsets = UIEdgeInsets(top: 25, left: 0, bottom: -10, right: 0)
+        tabBarItemGallery.title = "Gallery"
         
-        favoritesImage.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
-        tabBarItemFavorites.selectedImage = favoritesImage
         tabBarItemFavorites.image = favoritesImage
-        tabBarItemFavorites.imageInsets = UIEdgeInsets(top: 20, left: 0, bottom: -10, right: 0)
-        
+        tabBarItemFavorites.title = "Favorites"
+
         self.selectedIndex = 0
     }
     

@@ -13,7 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewControllers = [firstVC, secondVC]
         
         let tabBarVC = CustomTabBar(viewControllers: viewControllers)
-        
+
         let window = UIWindow(windowScene: windowScene)
         firstVC.setTabBarHeight(height: tabBarVC.tabBar.frame.height + window.safeAreaInsets.bottom)
         secondVC.setTabBarHeight(height: tabBarVC.tabBar.frame.height + window.safeAreaInsets.bottom)

@@ -1,11 +1,12 @@
-import Foundation
 import UIKit
 
 protocol NetworkServiceProcotol {
+    
     var delegate: RouterProtocol? { get set }
     func getPictureModels() -> [PictureModel]
     func cleanPictureModels()
     func fetchPhotosByRequest(text: String?)
+
 }
 
 class NetworkService: NetworkServiceProcotol {

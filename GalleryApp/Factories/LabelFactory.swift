@@ -1,4 +1,3 @@
-import Foundation
 import UIKit
 
 class LabelFactory: UILabel {
@@ -20,4 +19,5 @@ class LabelFactory: UILabel {
         label.textColor = .black
         return label
     }
+
 }
