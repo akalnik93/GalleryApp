@@ -5,9 +5,7 @@ class FavoritesViewController: UIViewController, UITableViewDataSource, UITableV
     var favoritePictures: [PictureModel] = []
     
     var tabBarSet = false
-    
-    let idCustomCell = "idCustomCell"
-    
+        
     var tableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .white
@@ -21,7 +19,7 @@ class FavoritesViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        self.tableView.register(FavoriteCell.self, forCellReuseIdentifier: idCustomCell)
+        self.tableView.register(FavoriteCell.self, forCellReuseIdentifier: FavoriteCell.identifier)
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
@@ -39,7 +37,7 @@ class FavoritesViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = self.tableView.dequeueReusableCell(withIdentifier: idCustomCell, for: indexPath) as? FavoriteCell else {
+        guard let cell = self.tableView.dequeueReusableCell(withIdentifier: FavoriteCell.identifier, for: indexPath) as? FavoriteCell else {
             return UITableViewCell()
         }
         let model = self.favoritePictures[indexPath.row]
@@ -78,7 +76,7 @@ class FavoritesViewController: UIViewController, UITableViewDataSource, UITableV
             tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -tabBarHeight),
-            tableView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 90)
+            tableView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 40)
         ])
     }
 }

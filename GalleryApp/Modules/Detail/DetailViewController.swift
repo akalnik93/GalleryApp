@@ -41,7 +41,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         self.setupSheetPresentation()
         self.view.backgroundColor = .white
-        self.offSet = 32
+        self.offSet = 24
         self.widthLabel = self.view.frame.width/2 - self.offSet
         self.constraintsForPicture()
         self.constraintsForAuthorName()
@@ -93,10 +93,10 @@ class DetailViewController: UIViewController {
     func constraintsForPicture() {
         self.view.addSubview(picture)
         NSLayoutConstraint.activate([
-            picture.topAnchor.constraint(equalTo: self.view.topAnchor, constant: self.offSet),
+            picture.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0.7*self.offSet),
             picture.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: self.offSet),
             picture.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -self.offSet),
-            picture.heightAnchor.constraint(equalTo: self.view.widthAnchor, constant: -2*self.offSet)
+            picture.heightAnchor.constraint(equalTo: self.view.widthAnchor, constant: -5.5*self.offSet)
             ])
     }
     

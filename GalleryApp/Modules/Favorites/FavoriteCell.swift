@@ -1,6 +1,7 @@
 import UIKit
 
 class FavoriteCell: UITableViewCell {
+    static let identifier = "favoriteCell"
     
     var cellTitle = LabelFactory.standartRight
     
